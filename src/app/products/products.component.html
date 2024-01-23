@@ -1,0 +1,10 @@
+<div class="products" *ngFor="let product of products">
+  <div class="product">
+    <p>id {{ product.id }}</p>
+    <p>{{ product.title }}</p>
+    <p>price {{ product.price }}$</p>
+    <p>{{ product.description }}</p>
+
+    <button routerLink="/product/{{ product.id }}">See product</button>
+  </div>
+</div>
