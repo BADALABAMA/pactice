@@ -1,6 +1,14 @@
-<div class="products" *ngFor="let product of products">
+<div class="products" *ngFor="let product of films">
   <div class="product">
-    <p>id {{ product.id }}</p>
+    <!-- <mat-card>
+      <mat-card-header>title: {{ film.title }}</mat-card-header>
+      <mat-card-content
+        >Opening crawl : {{ film.opening_crawl }}</mat-card-content
+      >
+      <mat-card-content>Producer: {{ film.producer }}</mat-card-content>
+      <mat-card-content>release date{{ film.release_date }}</mat-card-content>
+    </mat-card> -->
+
     <p>{{ product.title }}</p>
     <p>price {{ product.price }}$</p>
     <p>{{ product.description }}</p>

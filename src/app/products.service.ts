@@ -6,13 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductService {
-  private productId: any;
+  private productId: number = 0;
 
   private apiUrl = 'https://api.escuelajs.co/api/v1/products';
 
   constructor(private http: HttpClient) {}
 
-  getProducts(): Observable<any> {
+  getFilms(): Observable<any> {
     return this.http.get(this.apiUrl);
   }
   getProductById(productId: number): Observable<any> {
@@ -20,5 +20,4 @@ export class ProductService {
     this.productId = productId;
     return this.http.get(productUrl);
   }
-  setProductId(productId: number) {}
 }

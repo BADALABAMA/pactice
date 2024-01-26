@@ -8,7 +8,7 @@ import { OnInit } from '@angular/core';
   styleUrl: './product.component.scss',
 })
 export class ProductComponent implements OnInit {
-  productId: number = 0;
+  public productId: number = 0;
   public product: any = { id: this.productId, title: '', price: 0 };
   constructor(
     private productService: ProductService,

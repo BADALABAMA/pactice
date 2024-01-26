@@ -8,15 +8,17 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './products.component.scss',
 })
 export class ProductsComponent {
-  products: any[] = [];
+  films: any = [];
   product: any;
 
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
-    this.productService.getProducts().subscribe(
+    this.productService.getFilms().subscribe(
       (data) => {
-        this.products = data;
+        this.films = data;
+        console.log(data);
+        console.log(this.films);
       },
       (error) => {
         console.error('Error fetching products:', error);
@@ -24,3 +26,4 @@ export class ProductsComponent {
     );
   }
 }
+//

@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
+import { MatCardModule } from '@angular/material/card';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -31,6 +33,7 @@ import { ProductComponent } from './product/product.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    MatCardModule,
     HttpClientModule,
   ],
   providers: [],
