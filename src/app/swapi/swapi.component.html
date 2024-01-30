@@ -1,0 +1,7 @@
+<div class="products" *ngFor="let swapi of swapies">
+  <div class="product">
+    <p *ngFor="let prop of getObjectKeys(swapi)">
+      {{ prop }}: {{ swapi[prop] }}
+    </p>
+  </div>
+</div>

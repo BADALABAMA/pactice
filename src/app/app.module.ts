@@ -10,11 +10,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProductsComponent } from './products/products.component';
-import { AboutComponent } from './about/about.component';
-import { ContactsComponent } from './contacts/contacts.component';
+
 import { HttpClientModule } from '@angular/common/http';
-import { ProductComponent } from './product/product.component';
+import { SwapiComponent } from './swapi/swapi.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +20,8 @@ import { ProductComponent } from './product/product.component';
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
-    ProductsComponent,
-    AboutComponent,
-    ContactsComponent,
-    ProductComponent,
+
+    SwapiComponent,
   ],
   imports: [
     BrowserModule,
